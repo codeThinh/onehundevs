@@ -1,0 +1,187 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a,
+a:visited,
+u,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+  width: 1080px;
+  margin: auto;
+}
+
+/* navbar */
+
+.header {
+  color: white;
+  background: black;
+  height: 2.5rem;
+  margin: auto;
+  width: 1080px;
+  font-size: 0.75rem;
+}
+.header--nav > img {
+  height: 2.5rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.header--right {
+  margin-right: 76px;
+}
+
+.header--left {
+  margin-left: 76px;
+}
+
+.header--nav > a {
+  color: white;
+  float: left;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  height: 100%;
+  padding: 0.75rem;
+}
+
+/* hero */
+
+.hero > header {
+  font-weight: 700;
+  float: left;
+  padding: 1rem;
+  width: 1080px;
+}
+
+.hero > header > span + span {
+  font-weight: 400;
+  color: rgb(50, 50, 50);
+  float: right;
+}
+
+.hero--left {
+  font-size: 0.75rem;
+  color: white;
+  float: left;
+  width: 48%;
+  height: 22rem;
+  background: red;
+  background-image: url("../img/picture.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0.5rem;
+  position: relative;
+}
+
+.hero--left > div > h2 {
+  font-weight: 100;
+}
+
+.hero--left > div,
+.hero--right > div {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
+
+.hero--right {
+  color: white;
+  font-size: 0.7rem;
+  float: right;
+  width: 24%;
+  margin: 0.25rem;
+  height: 11rem;
+  background: blue;
+  background-image: url("../img/picture.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+h5 {
+  color: rgb(122, 122, 122);
+}
+
+/* news */
+
+.news {
+  font-weight: 700;
+  float: left;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  width: 1080px;
+}
+
+.news--card {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  width: 33.3333333333333333333%;
+  float: left;
+  padding: 0.5rem;
+}
+
+.news--card > img {
+  width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.red {
+  color: red;
+  margin-right: 0.25rem;
+}
+
+.orange {
+  color: orange;
+  margin-right: 0.25rem;
+}
+
+.purple {
+  color: purple;
+  margin-right: 0.25rem;
+}
+
+.blue {
+  color: blue;
+  margin-right: 0.25rem;
+}
+
+.light-blue {
+  color: lightblue;
+  margin-right: 0.25rem;
+}

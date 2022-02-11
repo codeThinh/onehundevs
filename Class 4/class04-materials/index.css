@@ -1,0 +1,53 @@
+* {
+  background-color: rgb(120, 206, 233);
+  color: white;
+}
+
+a {
+  color: rgb(0, 203, 157);
+}
+
+.container {
+  border: 5px solid rgb(0, 203, 74);
+  padding: 3rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.title {
+  font-size: 36px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  font-family: Helvetica, sans-serif;
+}
+
+.para {
+  font-family: "Times New Roman", Times, sans-serif;
+  line-height: 1.5;
+}
+
+.image {
+  float: right;
+  width: 250px;
+  margin: 1rem;
+}
+
+.footer {
+  color: rgb(126, 146, 152);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
