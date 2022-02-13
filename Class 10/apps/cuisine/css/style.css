@@ -64,7 +64,7 @@ li {
 }
 
 .hero > section {
-  font-size: 2qrem;
+  font-size: 1.75rem;
   float: left;
   width: 50%;
   margin-left: 5rem;
@@ -233,6 +233,7 @@ section > ul > li {
 
 .location > i {
   color: orange;
+  margin-bottom: 2rem;
 }
 .location > h2 {
   width: 100%;

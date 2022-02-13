@@ -5,16 +5,29 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+u,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
 }
 
 /******************************************
@@ -22,19 +35,279 @@
 /*******************************************/
 
 body {
-
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
+.accent {
+  color: rgb(200, 200, 200);
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+  font-weight: 100;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  color: white;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/* header */
+
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  z-index: 1;
 }
 
-footer {
+nav {
+  width: 80%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.header--logo {
+  font-size: 1.5rem;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+/* hero */
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: pink;
+}
+
+.hero--container {
+  max-width: 1080px;
+}
+
+.hero--top {
+  margin-top: 5rem;
+}
+
+.hero--container > h4 {
+  margin: 2rem;
+  margin-left: 0;
+}
+
+.hero--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hero--services {
+  height: 2.5rem;
+  width: 10rem;
+  background: black;
+  color: white;
+}
+
+.hero--book {
+  background: black;
+  color: white;
+  width: 20rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--book > h3 {
+  padding-left: 2rem;
+  border-left: 4px solid rgb(200, 200, 200);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero--book-info {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero--20 {
+  display: flex;
+  align-items: baseline;
+}
+
+.hero--book-butt {
+  margin: 1rem;
+  margin-left: 0;
+  height: 2.5rem;
+  width: 10rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons--cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  margin: 2rem;
+}
+
+.icons--cards > img {
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.momentum {
+  display: flex;
+  background: rgb(200, 200, 200);
+  justify-content: center;
+  align-items: center;
+}
+
+.momentum--desc {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.services--card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.services--card > img {
+  height: 25rem;
+}
+
+.services--card > div {
+  color: white;
+  text-align: center;
+  height: 3.5rem;
+  position: absolute;
+  bottom: -1rem;
+  width: 90%;
+  background: black;
+  margin-top: 1rem;
+}
+
+.hero--book {
+  background: black;
+  color: white;
+  width: 20rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#News {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news--book {
+  margin: 4rem;
+  background-image: url(../img/book.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1080px;
+}
+
+.news--book-info {
+  margin: 4rem;
+  margin-left: 10rem;
+}
+
+.news--20 {
+  display: flex;
+  align-items: baseline;
+}
+
+.news--book-butt {
+  margin: 1rem;
+  margin-left: 0;
+  height: 2.5rem;
+  color: white;
+  background: black;
+}
+
+#Lookbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Lookbook > h2 {
+  margin-top: 3rem;
+}
+
+#Lookbook > h1 {
+  color: black;
+}
+
+.lookbook--container {
+  display: flex;
+  gap: 1rem;
+}
+
+.lookbook--column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /******************************************
