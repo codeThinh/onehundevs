@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,19 +22,297 @@
 /*******************************************/
 
 body {
-
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+u,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.container {
+  width: 1080px;
+  margin: auto;
 }
 
-footer {
+/* hero */
 
+.hero {
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50vh;
+}
+
+.hero > nav > a {
+  float: right;
+  margin: 1rem;
+}
+
+.hero > section {
+  font-size: 2qrem;
+  float: left;
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.hero > section > h1 {
+  margin: 0;
+}
+
+.hero--top {
+  padding-top: 5rem;
+}
+
+.hero > section > h1 + h1 + h1 {
+  margin-bottom: 2rem;
+}
+
+input {
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 90%;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+.right {
+  margin: 1rem;
+  color: orange;
+}
+
+section > ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+section > ul > li {
+  font-size: 1.5rem;
+  float: left;
+  margin: 1rem;
+}
+
+/* about */
+
+.about {
+  font-size: 2.25rem;
+  width: 1080px;
+  margin: auto;
+  background-image: url(../img/2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 50vh;
+}
+
+.about > section {
+  width: 50%;
+  float: right;
+  margin-right: 5rem;
+}
+
+.about > section > h2 {
+  margin: 0;
+}
+
+.about > section > h3 {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  color: orange;
+}
+
+.about > section > h4 {
+  font-size: 1.25rem;
+}
+
+.about--button {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: orange;
+}
+
+/* menu */
+
+.menu {
+  font-size: 2.25rem;
+  width: 1080px;
+  margin: auto;
+  height: 50vh;
+}
+
+.menu > section > h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.menu > section > h3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.25rem;
+  color: orange;
+}
+
+.menu--nav {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu--nav > a {
+  float: left;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid orange;
+  color: orange;
+}
+
+.menu--first {
+  color: orange;
+}
+
+.menu--nav > a + a {
+  border-bottom: 1px solid gray;
+}
+
+.menu--caro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.menu--dot {
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  height: 6rem;
+  color: rgba(255, 166, 0, 0.5);
+}
+
+.menu--dot > i:nth-child(3) {
+  font-size: 1rem;
+  color: orange;
+}
+
+/* location */
+
+.location {
+  font-size: 2.25rem;
+  width: 1080px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(rgb(236, 233, 233), white);
+  margin: 0;
+}
+
+.location > i {
+  color: orange;
+}
+.location > h2 {
+  width: 100%;
+  margin-top: 0;
+}
+
+.location > h3 {
+  width: 100%;
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: orange;
+}
+
+#location {
+  margin-top: 3rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.location--time {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: left;
+  padding: 2rem;
+}
+
+.location--video {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* testimony */
+
+.testimony {
+  font-size: 2.25rem;
+  width: 1080px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(rgb(236, 233, 233), white);
+}
+
+.testimony > i {
+  font-size: 10rem;
+}
+.testimony > h2 {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.testimony > h3 {
+  width: 100%;
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: orange;
+}
+
+.test--star {
+  color: gold;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.test--desc {
+  width: 80%;
+  margin: auto;
+}
+#blog {
+  margin-top: 3rem;
 }
 
 /******************************************
