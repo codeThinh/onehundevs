@@ -5,16 +5,35 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+u,
+li,
+i {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /******************************************
@@ -22,21 +41,219 @@
 /*******************************************/
 
 body {
-
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+.accent {
+  color: rgba(102, 118, 138, 1);
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+  width: 100%;
+  height: 4rem;
+  background: rgba(102, 118, 138, 1);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
 
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+ul > a {
+  color: white;
+}
+
+nav > img {
+  height: 3rem;
+}
+
+nav > button {
+  font-weight: 700;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: white;
+  color: white;
+  color: rgba(102, 118, 138, 1);
+}
+
+main {
+  margin-top: 4rem;
+  background: rgba(102, 118, 138, 1);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.hero > h1 {
+  font-size: 3rem;
+  color: white;
+  margin: 2rem;
+  margin-top: 5rem;
+}
+
+.hero > h4 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero--video {
+  margin-bottom: 2rem;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 40rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.why > h2 {
+  margin-bottom: 2rem;
+}
+
+.visit {
+  background: lightgray;
+  display: flex;
+}
+
+.visit--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.visit--card > div {
+  background: rgba(102, 118, 138, 1);
+  width: 80%;
+  width: 25rem;
+  height: 15rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.visit--card > button {
+  font-weight: 700;
+  height: 3rem;
+  border: 1px solid rgba(102, 118, 138, 1);
+  background: none;
+  width: 12rem;
+  color: rgba(102, 118, 138, 1);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.volunteer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 40rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.volunteer > button {
+  font-weight: 700;
+  height: 3rem;
+  border: 1px solid rgba(102, 118, 138, 1);
+  background: none;
+  width: 12rem;
+  color: rgba(102, 118, 138, 1);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 footer {
-
+  background: rgba(22, 31, 42, 1);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
+footer > section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.footer--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--container > h4 {
+  color: rgba(102, 118, 138, 1);
+}
+
+.footer--footnote {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.footer--footnote > img {
+  height: 2rem;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
