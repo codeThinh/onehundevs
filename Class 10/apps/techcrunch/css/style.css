@@ -5,16 +5,31 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+u,
+li,
+i {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /******************************************
@@ -22,19 +37,108 @@
 /*******************************************/
 
 body {
-
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+}
 
+.overall {
+  display: flex;
+  border: 2px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin: 1rem;
+  width: 20%;
+}
+
+.main-container {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 50%;
+}
+article > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  background: gray;
+  margin-top: 1rem;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin: 1rem;
+  width: 30%;
+}
+
+.container h3 {
+  margin: 1rem;
 }
 
 footer {
+  margin: 1rem;
+  display: flex;
+  margin: 1rem;
+}
 
+footer div,
+footer p {
+  width: 30%;
+  margin: 1rem;
+}
+
+footer > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: gray;
+  margin: 1rem;
 }
 
 /******************************************
