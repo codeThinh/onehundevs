@@ -42,3 +42,17 @@ function min(a,b) {
 function power(a,b) {
     return a ** b;
 }
+
+
+// ARROW FUNCTIONS
+
+ask(question, yes, no) => yes ? yes() : no();
+
+  ask(
+    "Do you agree?", 
+    () => alert("You agreed.");,
+    () => alert("You canceled the execution.");
+  );
+
+
+
